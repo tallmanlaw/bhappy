@@ -1,0 +1,143 @@
+body {
+    height: 98vh;
+    background-color: #5B3D3D;
+    margin: 10px;
+}
+header {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+main {
+    height: 1500px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 2px;
+    color: white;
+}
+.box {
+    grid-column: span 1;
+    grid-row: span 2;
+    display: grid;
+    background-size: cover;
+    color: white;
+}
+.word {
+    background-color: rgb(236, 4, 4);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+.one {
+    line-height: 40px;
+    background-color: #3FBFBF;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.tie {
+    background-image: url(images/tie.png);
+    grid-row: span 1;
+    grid-column: span 2;
+    background-size: 250%;
+}
+.sign {
+    background-image: url(images/sign.jpg);    
+    background-position: 23% 85%;
+}
+.two {
+    background-color: #3FBFBF;
+    line-height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    background-image: none;
+}
+.moped {
+    background-image: url(images/moped.jpg);
+    grid-row: span 1;
+    grid-column: span 2;
+    background-position: 21% 79%;
+}
+.three {
+    display: none;
+}
+@media only screen and (min-width: 600px){
+    main {
+        height: 700px;
+    }
+    .container {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .box {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .word {
+        padding: 0px;
+    }
+    .one {
+        grid-row: span 2;
+    }
+    .tie {
+        grid-row: span 2;
+        grid-column: span 2;
+        background-size: 145%;
+        background-position: 45% 55%;
+    }
+    .sign {
+        background-image: url(images/sign.jpg);    
+        grid-row: span 2;
+        background-position: 40% 60%;
+    }
+    .two {
+        grid-row: span 2;
+    }
+    .moped {
+        grid-row: span 2;
+        grid-column: span 2;
+        background-size: 75%;
+        background-position: 0% 115%;
+    }
+    .light {
+        background-image: url(images/light.jpg);
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .three {
+        grid-row: span 2;
+        display: unset;
+        line-height: 40px;
+        background-color: #3FBFBF;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+    .sax {
+        background-image: url(images/sax.jpg);
+        background-position: 50% 40%;
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .flower {
+        background-image: url(images/flower.jpg);
+        grid-row: span 1;
+        grid-column: span 1;
+        background-position: 100% 50%;
+    }
+}
+
